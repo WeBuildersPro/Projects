@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Maxim Shelkov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
+
+      <link rel="stylesheet" href="css/Gallery.css">
+
+
+</head>
+
+<body>
+
+<section class="w3-content w3-container w3-padding-64">
+  <h1 class="w3-center">Maxim Shelkov</h1>
+  <p class="w3-center"><em>lorem ipsum dolor amet</em></p>
+
+
+  <div class="w3-row-padding w3-center" appml-data="images">
+
+    <div class="w3-col m4 w3-padding-16" appml-repeat="image">
+      <img src="{{src}}" alt="alt" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+  </div>
+</section>
+>
+<div id="modal" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img" style="max-width:100%">
+  </div>
+</div>
+
+
+  <script src='https://www.w3schools.com/appml/2.0.3/appml.js'></script>
+
+    <script src="js/Gallery.js"></script>
+
+</body>
+</html>
