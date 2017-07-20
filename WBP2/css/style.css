@@ -602,3 +602,10 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
+#moto {
+	width: 100%;
+	border: 1px solid #4B0082
+}
+#motop {
+	font-family: arial black, sans-serif;
+}
