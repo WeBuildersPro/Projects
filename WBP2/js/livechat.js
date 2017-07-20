@@ -33,7 +33,6 @@ xhr.send() // send request
 // Livechat
 var liveChat = Smooch.init({
     appToken: 'esmexkjmg08wjq7csd12651yu',
-    emailCaptureEnabled: true,
     givenName: '',
     surname: '',
     email: '',

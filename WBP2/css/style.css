@@ -609,3 +609,8 @@ nav#footer{
 #motop {
 	font-family: arial black, sans-serif;
 }
+
+#backendinfo {
+	padding: 0px;
+	font-size: 16px;
+}
