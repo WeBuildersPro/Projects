@@ -288,7 +288,7 @@
                 </div>
             </div>
             <div class="space"></div>
-            <div class="row">
+            <div class="row" id="htmlmove">
                 <div class="col-md-10 col-sm-10">
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
@@ -389,30 +389,39 @@
                         <br><a href="#about-us" class="lbottom">About Us</a>
                         <ul class="social">
                             <li><a href="https://www.facebook.com/webuildersofficial/"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="https://www.instagram.com/webuilderspro/"><span class="fa fa-instagram"></span></a></li>
                             <li><a href="https://twitter.com/WeBuildersPro"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.instagram.com/webuilderspro/"><span class="fa fa-instagram"></span></a></li>
                             <li><a href="https://www.youtube.com/channel/UCed5d6BilgCP8ULrYdVE4aw"><span class="fa fa-youtube"></span></a></li>
                           </ul>
                     </address>
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off">
+                    <form action="php/form.php" method="post" name="myemailform">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                                <input type="text" class="form-control" placeholder="Phone No.">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name">
+                                
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email" required>
-                                <input type="text" class="form-control" placeholder="Subject" required>
+                                <input type="text" class="form-control" placeholder="Email" name="email">
+                                
                             </div>
                         </div>
-                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Message" name="message"></textarea>
                         <div class="text-right">
-                            <a href="#contact" class="btn send-btn">Send</a>
+                            <input type="submit" name='submit' value="submit">
                         </div>
                     </form>
+                    <script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+                    </script>
                 </div>
             </div>
         </div>
@@ -456,5 +465,6 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdn.smooch.io/smooch.min.js"></script>
     <script type="text/javascript" src="js/livechat.js"></script>
+    <script type="text/javascript" src="js/contactformvalidation"></script>
   </body>
 </html>
