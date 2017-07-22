@@ -1,0 +1,1 @@
+alert("You must include your name AND your e-mail!");
