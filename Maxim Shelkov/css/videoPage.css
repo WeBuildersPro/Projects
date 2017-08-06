@@ -1,0 +1,11 @@
+@import 'https://fonts.google.com/?selection.family=Bubbler+One';
+
+h1 {
+    font-size: 50px;
+    font-family: 'Bubbler One', sans-serif;
+    text-align: center;
+}
+
+.personal_videos {
+    padding-left: 353px;
+}
