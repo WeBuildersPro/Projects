@@ -1,44 +1,63 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Maxim Shelkov</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+            <title>Maxim Shelkov</title>
+               
+                <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
+       
+        <!-- Gallery CSS -->  
+    <link rel="stylesheet" type="text/css" href="css/Gallery.css">
+      
+    </head>
+    
+  <body id="page-top">
+  
+  <!-- Navigation Bar -->
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+     
+      <!-- Brand and toggle get grouped for better mobile display -->
+      
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        <a class="navbar-brand" href="#page-top">Leir's Coffee &amp Code</a>
+      </div>
 
-  <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
-
-      <link rel="stylesheet" href="css/Gallery.css">
-
-
-</head>
-
-<body>
-
-<section class="w3-content w3-container w3-padding-64">
-  <h1 class="w3-center">Maxim Shelkov</h1>
-  <p class="w3-center"><em>lorem ipsum dolor amet</em></p>
-
-
-  <div class="w3-row-padding w3-center" appml-data="images">
-
-    <div class="w3-col m4 w3-padding-16" appml-repeat="image">
-      <img src="{{src}}" alt="alt" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      
+      <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="#about">About</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- /.navbar-collapse -->
+      
     </div>
-
-  </div>
-</section>
->
-<div id="modal" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img" style="max-width:100%">
-  </div>
-</div>
-
-
-  <script src='https://www.w3schools.com/appml/2.0.3/appml.js'></script>
-
-    <script src="js/Gallery.js"></script>
-
-</body>
+    
+    <!-- /.container-fluid -->
+    
+  </nav>
+     
+    </body>
+        
+    
 </html>
