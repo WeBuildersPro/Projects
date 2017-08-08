@@ -228,7 +228,7 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 #overview-video {
-	background: url(../img/bg2.jpg);
+	background: url(../img/);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -657,3 +657,11 @@ hr.style18:before {
 .works-placement {
     margin-top: 80px;
 }
+
+#view:hover { 
+  color: #c59a6d; 
+} 
+#view { 
+  color: white; 
+  margin-bottom: 0px; 
+  }
