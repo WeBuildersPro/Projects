@@ -228,7 +228,7 @@ a.down-btn span.fa.fa-angle-down {
 }
 
 #overview-video {
-	background: url(/img/nonProfit.png);
+	background: url(../img/nonProfit.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -663,5 +663,5 @@ hr.style18:before {
 } 
 #view { 
   color: white; 
-  margin-bottom: 0px; 
+  margin-bottom: 65px; 
   }
