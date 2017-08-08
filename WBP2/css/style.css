@@ -647,6 +647,13 @@ hr.style18:before {
   border-radius: 20px; 
 }
 
-.alignment {
-    margin-right: 50%;
+.col-centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.works-placement {
+    margin-top: 80px;
 }
