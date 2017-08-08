@@ -5,10 +5,29 @@ client.on('ready', () => {
   console.log('BOT Isabelle is now running!');
 });
 
+/**
+ * Randomize array element order in-place.
+ * Using Durstenfeld shuffle algorithm.
+ */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+
 client.on('message', message => {
   if(message.author.bot) return;
   if(message.author.id == 203336935165526017 || message.author.id == 178987431796670465) {
-      var num = Math.random();
+      
+      var numArray = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
+      numArray = shuffleArray(numArray);
+      var num = numArray[0];
+      numArray.splice(0, 1);
+    
       if (num <= 0.1) {
         insult = "You failed, so did your dads condom.";
       }
